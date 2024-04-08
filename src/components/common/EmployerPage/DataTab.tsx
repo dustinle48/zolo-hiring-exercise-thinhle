@@ -1,4 +1,4 @@
-import { BarChart, PieChart, RadarChart } from "@mantine/charts";
+import { BarChart, RadarChart } from "@mantine/charts";
 import { Box, Button } from "@mantine/core";
 
 type TProps = {
@@ -8,11 +8,15 @@ type TProps = {
 const DataTab = (props: TProps) => {
   const { data } = props;
 
+  const handleUpload = async () => {
+    // await upload
+  };
+
   return (
     <>
       <h1>Data visualization</h1>
 
-      <Button>Upload CSV/JSON file.</Button>
+      <Button onClick={handleUpload}>Upload CSV/JSON file.</Button>
 
       <Box style={{ marginTop: 10 }}>
         <BarChart
