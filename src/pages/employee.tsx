@@ -57,7 +57,7 @@ const EmployeePage = (props: TProps) => {
         <PageContainer>
           <h1>Employee Page</h1>
 
-          <Tabs defaultValue="job">
+          <Tabs defaultValue="job" style={{ width: "60%" }}>
             <Tabs.List>
               <Tabs.Tab value="job" leftSection={<AiOutlineHolder />}>
                 Job

@@ -37,7 +37,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
 
       <AppShell.Main>{children}</AppShell.Main>
 
-      <AppShell.Footer>
+      <AppShell.Footer style={{ position: "inherit" }}>
         <Footer />
       </AppShell.Footer>
     </AppShell>

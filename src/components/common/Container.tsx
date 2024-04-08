@@ -9,6 +9,7 @@ export const PageContainer = ({ children }: { children: ReactNode }) => {
         textAlign: "center",
         justifyContent: "center",
         alignItems: "center",
+        width: "100%",
       }}
     >
       {children}
