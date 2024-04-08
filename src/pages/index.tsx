@@ -1,5 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
+import { Button, Center } from "@mantine/core";
+import { PageContainer } from "@/components/common/Container";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,7 +12,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main>
+        <PageContainer>
+          <h1>Welcome to ZOLOMART</h1>
+          <Center style={{ gap: "10px" }}>
+            <Link href="/employer">
+              <Button>Employer</Button>
+            </Link>
+            <Link href="/employee">
+              <Button>Employee</Button>
+            </Link>
+          </Center>
+        </PageContainer>
+      </main>
     </>
   );
 }
