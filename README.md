@@ -1,40 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 1. Show off
 
-## Getting Started
+### Home page
 
-First, run the development server:
+From here, there are 2 ways to go, choose your path wisely!
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Home page](public/img/home-page.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Employer page
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+#### Applicant Tab (default tab)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- It displays a list of applicants from your organization and provides action buttons.
+- Only Admin role and Hiring manager role can be able to create Offers.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Applicant tab](public/img/applicant-tab.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Offered Tab
 
-## Learn More
+- It displays a list of offers that current Admin/Hiring manager created.
 
-To learn more about Next.js, take a look at the following resources:
+![Offered tab](public/img/offered-tab.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Data Tab
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- It displays a table of data which allows user to sort or search by any unique identifiers.
+- It also displays multiple types of charts based on users' desires.
+- HR team members can upload CSV/JSON file here.
 
-## Deploy on Vercel
+![data tab](public/img/data-tab.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Employee page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Job Tab (default tab)
+
+- It displays a list of applied jobs.
+- Click an item will redirect users to the specific company job portal for more details.
+
+![Job tab](public/img/job-tab.png)
+
+#### Offer Tab
+
+- It displays a list of offers.
+- Click an item will open a modal that displays offer details.
+- Every offer will have a unique ID and only associated employee can their offers.
+- Users can hover over any line and terms to see definitions or clarifications.
+- Both employer and employee can make inline comments to the offer just like how Github and Bitbucket work.
+- An API will be called every ~10 ~15 seconds to check for new comments.
+
+![Offer tab](public/img/offer-tab.png)
+
+## 2. My Choice
+
+I chose **frontend** exercise because:
+
+- I consider myself as 60-40, 60 with **frontend**, which means it is my strongest asset.
+- I also did read the **backend** exercise, but I feel like I could express my whole idea more with the **frontend**, although I'm willing to try the **backend** later as well.
+
+## 3. My product
+
+When I first read the exercise, I immediately thought of a Hiring and Employment Data Analyst Platform, where:
+
+- Employers can create their own organizations and job postings. They also can create offers for particular employees within the platform. Moreover, they can upload data and visualize them using built-in tools. Last but not least, they can also search for candidates as LinkedIn works.
+- Employees need to create accounts to keep track of their employment process. When they are offered, they can view the offers and ask for details or even request changes. They can also create their own profiles for employers to find them.

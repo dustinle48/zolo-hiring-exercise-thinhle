@@ -25,7 +25,8 @@ const EmployeePage = (props: TProps) => {
       job: "Developer",
     },
     jobList: {
-      caption: "Click on any item would redirect to that company job portal.",
+      caption:
+        "Click on any item would redirect to that company job portal, detail about the role, team, and organization.",
       head: ["Company", "Job title", "Status"],
       body: [
         ["Apple", "Fullstack developer", "Pending"],
@@ -36,7 +37,7 @@ const EmployeePage = (props: TProps) => {
     },
     offerList: {
       caption:
-        "Click on any item would show the text component display the offer just like Code in Github or Bitbucket where user could comment inline for requesting clarification",
+        "Click on any item would open a modal to display the offer. Just like Code in Github or Bitbucket where user could comment inline for requesting clarification",
       head: ["Company", "Job title", "Status"],
       body: [
         ["Arsenal", "Midfielder", "Offered"],

@@ -1,5 +1,5 @@
 import { BarChart, RadarChart } from "@mantine/charts";
-import { Box, Button } from "@mantine/core";
+import { Box, Button, Text } from "@mantine/core";
 
 type TProps = {
   data: any;
@@ -17,6 +17,11 @@ const DataTab = (props: TProps) => {
       <h1>Data visualization</h1>
 
       <Button onClick={handleUpload}>Upload CSV/JSON file.</Button>
+
+      <Text c="dimmed">
+        There should be a table here to display data. The table allows users to
+        sort or search by any unique identifiers.
+      </Text>
 
       <Box style={{ marginTop: 10 }}>
         <BarChart
