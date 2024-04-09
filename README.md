@@ -62,3 +62,22 @@ When I first read the exercise, I immediately thought of a Hiring and Employment
 
 - Employers can create their own organizations and job postings. They also can create offers for particular employees within the platform. Moreover, they can upload data and visualize them using built-in tools. Last but not least, they can also search for candidates as LinkedIn works.
 - Employees need to create accounts to keep track of their employment process. When they are offered, they can view the offers and ask for details or even request changes. They can also create their own profiles for employers to find them.
+
+## 4. How to run
+
+- Web
+
+```
+npm install
+npm run dev
+
+npm test //to run test files
+```
+
+- Services
+
+```
+cd database
+docker-compose -f docker-compose.mysql.yml up // to run MySQL docker
+docker-compose -f docker-compose.minio.yml up // to run MinIO docker
+```
